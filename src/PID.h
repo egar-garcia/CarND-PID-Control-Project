@@ -17,18 +17,39 @@ public:
   double Ki;
   double Kd;
 
+  double value;
+
+  /*
   double throttle;
   double steer;
+  */
+
   double prev_cte;
   double int_cte;
 
+  double params[3];
+  double d_params[3];
+
   double total_err;
   long total_count;
+
+  int twiddle_sample_len;
+  int twiddle_round;
+  int twiddle_param_idx;
+  int twiddle_param_step;
+  int twiddle_count;
+  double twiddle_total_error;
+  double twiddle_best_error;
+  double twiddle_error;
+
+  /*
   double parcial_err;
   long parcial_count;
-  long parcial_size;
+  long parcial_length;
   long parcial_number;
 
+  double steer_param[3];
+  */
 
   /*
   * Constructor
