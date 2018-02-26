@@ -36,7 +36,7 @@ int main()
   PID pid_steer;
   PID pid_throttle;
   // Initializing PID controlers for steering and throttling
-  pid_steer.Init(0.35, 0.01, 30, 0.035, 0.001, 2.5);
+  pid_steer.Init(0.35, 0.01, 30.0, 0.035, 0.001, 3.0);
   pid_throttle.Init(0.3, 0.0, 0.3, 0.03, 0.0, 0.03);
 
   h.onMessage([&pid_steer, &pid_throttle](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {

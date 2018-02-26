@@ -44,9 +44,9 @@ void PID::Init(double Kp, double Ki, double Kd) {
 }
 
 void PID::UpdateError(double cte) {
-    // Calculating the differential
+    // Calculating the differential CTE
     double diff_cte = cte - prev_cte;
-    // Calculating the integral
+    // Calculating the integrated CTE
     int_cte += cte;
 
     // Calculates the value according to the given parametes

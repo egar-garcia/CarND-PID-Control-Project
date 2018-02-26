@@ -44,14 +44,14 @@ class PID {
 
     ///* The previous CTE
     double prev_cte;
-    ///* The integral CTE
+    ///* The integrated CTE
     double int_cte;
 
     /**
-     * The parametes used for the controller:
+     * The hyperparameters parametes used for the controller:
      * 0: Position
      * 1: Diferential
-     * 3: integral
+     * 2: Integral
      */
     double params[3];
 
