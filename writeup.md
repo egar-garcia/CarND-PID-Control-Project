@@ -92,11 +92,11 @@ Coefficient D is useful to avoid oscillations, by counter steering when the CTE 
 
 Coefficient I (integral) is useful to correct a possible bias involved in the measurement of the CTE in long term runnings.
 
-In this video the coefficient I is set to zero: [Without I coefficient  example](./docs/PID_controler_no_I.mov)., as it can be seen the CTE has a tendency to stay slightly on the positive side around 0.07.
+In this video the coefficient I is set to zero: [Without I coefficient  example](./docs/PID_controller_no_I.mov)., as it can be seen the CTE has a tendency to stay slightly on the positive side around 0.07.
 
 ![video_no_I]
 
-In this video the coefficient I is set to 0.01: [I coefficient  example](./docs/PID_controler_I.mov)., as it can be seen the CTE has bounces around zero, indicating that the bias has been reduced.
+In this video the coefficient I is set to 0.01: [I coefficient  example](./docs/PID_controller_I.mov)., as it can be seen the CTE has bounces around zero, indicating that the bias has been reduced.
 
 ![video_I]
 
