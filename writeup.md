@@ -119,6 +119,8 @@ The election of the parameters for the throttle's PID was a bit more difficult, 
 #### The vehicle must successfully drive a lap around the track.
 ##### No tire may leave the drivable portion of the track surface. The car may not pop up onto ledges or roll over any surfaces that would otherwise be considered unsafe (if humans were in the vehicle).
 
-After the previously described implementation of the PID controller, the execution in my computer using the Term 2 Simulator was able to successfully drive the car within the track surface. This can be seen in the following video that shows a two lap run: [run example](./docs/PID_controller_run.mov)
+After the previously described implementation of the PID controller, the execution in my computer using the Term 2 Simulator was able to successfully drive the car within the track surface.
+
+This can be seen in the following video of two laps: [run example](./docs/PID_controller_run.mov), the second lap runs smother that the first one thanks to the effect of the integrated Twiddle in action.
 
 ![video_run]
