@@ -72,13 +72,13 @@ The Twiddle optimization algorithm presented in the lessons was also integrated 
 
 Coefficient P is used to steer in opposite direction of the CTE, in order to reduce the CTE the next time lapse, however by itself it can make the car to continuously oscillates, as can be seen in the following video.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/19i4zbjLePw/0.jpg)](http://www.youtube.com/watch?v=19i4zbjLePw)
+[![Coefficient P](http://img.youtube.com/vi/19i4zbjLePw/0.jpg)](http://www.youtube.com/watch?v=19i4zbjLePw)
 
 ###### Coefficient D (differential)
 
 Coefficient D is useful to avoid oscillations, by counter steering when the CTE is being reduced or add up to the steering direction if the CTE is being increased. In the following video it can be seen how used by itself (with a value of 0.35) almost suppresses oscillations.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/03jrWCScxB0/0.jpg)](http://www.youtube.com/watch?v=03jrWCScxB0)
+[![Coefficient D](http://img.youtube.com/vi/03jrWCScxB0/0.jpg)](http://www.youtube.com/watch?v=03jrWCScxB0)
 
 ###### Coefficient I (integral)
 
@@ -86,11 +86,11 @@ Coefficient I (integral) is useful to correct a possible bias involved in the me
 
 In the following video the coefficient I is set to zero, as it can be seen the CTE has a tendency to stay slightly on the positive side around 0.07.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/WArfWTqbBj4/0.jpg)](http://www.youtube.com/watch?v=WArfWTqbBj4)
+[![Without Coefficient I](http://img.youtube.com/vi/WArfWTqbBj4/0.jpg)](http://www.youtube.com/watch?v=WArfWTqbBj4)
 
 In the following video the coefficient I is set to 0.01, it can be seen the CTE bounces around zero, which can be interpreted as an indicator of the elimination of a bias.
 
-[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YeibrAnoL-I/0.jpg)](http://www.youtube.com/watch?v=YeibrAnoL-I)
+[![Coefficient I](http://img.youtube.com/vi/YeibrAnoL-I/0.jpg)](http://www.youtube.com/watch?v=YeibrAnoL-I)
 
 ###### PID for throttling
 
@@ -116,5 +116,3 @@ After the previously described implementation of the PID controller, the executi
 This can be seen in the following video of two laps, the second lap runs smother that the first one thanks to the effect of the integrated Twiddle in action.
 
 [![Two Laps Run](http://img.youtube.com/vi/uvuqDuGUPaw/0.jpg)](http://www.youtube.com/watch?v=uvuqDuGUPaw)
-
-![video_run]
