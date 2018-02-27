@@ -5,14 +5,6 @@ Self-Driving Car Engineer Nanodegree Program
 
 In this project the lake race track from the Behavioral Cloning Project is revisited. This time, however, implementing a PID controller in C++ to maneuver the vehicle around the track!
 
-[//]: # (Image References)
-[video_P]: ./docs/PID_controller_P.mov
-[video_D]: ./docs/PID_controller_D.mov
-[video_no_I]: ./docs/PID_controller_no_I.mov
-[video_I]: ./docs/PID_controller_I.mov
-[video_run]: ./docs/PID_controller_run.mov
-
-
 
 ### Build
 
@@ -78,27 +70,27 @@ The Twiddle optimization algorithm presented in the lessons was also integrated 
 
 ###### Coefficient P (position)
 
-Coefficient P is used to steer in opposite direction of the CTE, in order to reduce the CTE the next time lapse, however by itself it can make the car to continuously oscillates, as can be seen in this video (with a value of 30): [P coefficient  example](./docs/PID_controller_P.mov).
+Coefficient P is used to steer in opposite direction of the CTE, in order to reduce the CTE the next time lapse, however by itself it can make the car to continuously oscillates, as can be seen in the following video.
 
-![video_P]
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/19i4zbjLePw/0.jpg)](http://www.youtube.com/watch?v=19i4zbjLePw)
 
 ###### Coefficient D (differential)
 
-Coefficient D is useful to avoid oscillations, by counter steering when the CTE is being reduced or add up to the steering direction if the CTE is being increased. In this video it can be seen how used by itself (with a value of 0.35) mitigates the oscillations: [D coefficient  example](./docs/PID_controller_D.mov).
+Coefficient D is useful to avoid oscillations, by counter steering when the CTE is being reduced or add up to the steering direction if the CTE is being increased. In the following video it can be seen how used by itself (with a value of 0.35) almost suppresses oscillations.
 
-![video_D]
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/03jrWCScxB0/0.jpg)](http://www.youtube.com/watch?v=03jrWCScxB0)
 
 ###### Coefficient I (integral)
 
 Coefficient I (integral) is useful to correct a possible bias involved in the measurement of the CTE in long term runnings.
 
-In this video the coefficient I is set to zero: [Without I coefficient  example](./docs/PID_controller_no_I.mov)., as it can be seen the CTE has a tendency to stay slightly on the positive side around 0.07.
+In the following video the coefficient I is set to zero, as it can be seen the CTE has a tendency to stay slightly on the positive side around 0.07.
 
-![video_no_I]
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/WArfWTqbBj4/0.jpg)](http://www.youtube.com/watch?v=WArfWTqbBj4)
 
-In this video the coefficient I is set to 0.01: [I coefficient  example](./docs/PID_controller_I.mov)., as it can be seen the CTE has bounces around zero, indicating that the bias has been reduced.
+In the following video the coefficient I is set to 0.01, it can be seen the CTE bounces around zero, which can be interpreted as an indicator of the elimination of a bias.
 
-![video_I]
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/YeibrAnoL-I/0.jpg)](http://www.youtube.com/watch?v=YeibrAnoL-I)
 
 ###### PID for throttling
 
@@ -121,6 +113,8 @@ The election of the parameters for the throttle's PID was a bit more difficult, 
 
 After the previously described implementation of the PID controller, the execution in my computer using the Term 2 Simulator was able to successfully drive the car within the track surface.
 
-This can be seen in the following video of two laps: [run example](./docs/PID_controller_run.mov), the second lap runs smother that the first one thanks to the effect of the integrated Twiddle in action.
+This can be seen in the following video of two laps, the second lap runs smother that the first one thanks to the effect of the integrated Twiddle in action.
+
+[![Two Laps Run](http://img.youtube.com/vi/uvuqDuGUPaw/0.jpg)](http://www.youtube.com/watch?v=uvuqDuGUPaw)
 
 ![video_run]
